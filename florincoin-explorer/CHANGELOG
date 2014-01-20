@@ -1,0 +1,25 @@
+0.24 {
+	added create table statements to README
+	TODO: add a transaction vout/vin table
+}
+
+0.25 {
+	moved $rpc_setup to setup.php
+	added block_exporer api
+	added filter to block explorer
+}
+
+0.255 {
+	added transaction vout, transaction vin, and vout_address tables to database
+	raw transaction data is now displayed in a huamn readable manner in the block explorer web page
+	reorganization lookback call added to blockchain_cron
+	TODO: make vout_address.vout_id unique (currently there are duplicate entries created during reorg detection/handling)
+	TODO: add check for tx_db_id, n value to be unique (duplicate entry created during reorg detection/handling) 
+}
+
+0.27 {
+   added txmp
+   added fees to tx page
+   optimized table datatypes (still needs work)
+   TODO: optimize table datatypes more!
+}
